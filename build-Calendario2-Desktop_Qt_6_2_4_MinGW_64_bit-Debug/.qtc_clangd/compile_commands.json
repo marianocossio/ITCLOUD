@@ -9,7 +9,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-vRuAML\\clang-uiheader-bVzcJU",
+        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-TaiZUb\\clang-uiheader-WazFju",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -84,7 +84,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-vRuAML\\clang-uiheader-bVzcJU",
+        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-TaiZUb\\clang-uiheader-WazFju",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -159,7 +159,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-vRuAML\\clang-uiheader-bVzcJU",
+        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-TaiZUb\\clang-uiheader-WazFju",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -234,7 +234,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-vRuAML\\clang-uiheader-bVzcJU",
+        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-TaiZUb\\clang-uiheader-WazFju",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -309,7 +309,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-vRuAML\\clang-uiheader-bVzcJU",
+        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-TaiZUb\\clang-uiheader-WazFju",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -384,7 +384,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-vRuAML\\clang-uiheader-bVzcJU",
+        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-TaiZUb\\clang-uiheader-WazFju",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -459,7 +459,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-vRuAML\\clang-uiheader-bVzcJU",
+        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-TaiZUb\\clang-uiheader-WazFju",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -534,7 +534,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-vRuAML\\clang-uiheader-bVzcJU",
+        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-TaiZUb\\clang-uiheader-WazFju",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -609,7 +609,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-vRuAML\\clang-uiheader-bVzcJU",
+        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-TaiZUb\\clang-uiheader-WazFju",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -684,7 +684,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-vRuAML\\clang-uiheader-bVzcJU",
+        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-TaiZUb\\clang-uiheader-WazFju",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -744,10 +744,10 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\maria\\Mariano\\Workspaces\\wITCLOUD\\build-Calendario2-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\ui_dialogoagregarevento.h"
+        "C:\\Users\\maria\\Mariano\\Workspaces\\wITCLOUD\\build-Calendario2-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\ui_calendario.h"
     ],
     "directory": "C:/Users/maria/Mariano/Workspaces/wITCLOUD/build-Calendario2-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/maria/Mariano/Workspaces/wITCLOUD/build-Calendario2-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/ui_dialogoagregarevento.h"
+    "file": "C:/Users/maria/Mariano/Workspaces/wITCLOUD/build-Calendario2-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/ui_calendario.h"
 },
 {
     "arguments": [
@@ -759,7 +759,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-vRuAML\\clang-uiheader-bVzcJU",
+        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-TaiZUb\\clang-uiheader-WazFju",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -834,7 +834,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-vRuAML\\clang-uiheader-bVzcJU",
+        "C:\\Users\\maria\\AppData\\Local\\Temp\\QtCreator-TaiZUb\\clang-uiheader-WazFju",
         "-nostdinc",
         "-nostdinc++",
         "-g",
@@ -894,9 +894,9 @@
         "-Wno-unknown-warning-option",
         "-Wno-documentation-unknown-command",
         "-fno-delayed-template-parsing",
-        "C:\\Users\\maria\\Mariano\\Workspaces\\wITCLOUD\\build-Calendario2-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\ui_calendario.h"
+        "C:\\Users\\maria\\Mariano\\Workspaces\\wITCLOUD\\build-Calendario2-Desktop_Qt_6_2_4_MinGW_64_bit-Debug\\ui_dialogoagregarevento.h"
     ],
     "directory": "C:/Users/maria/Mariano/Workspaces/wITCLOUD/build-Calendario2-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/maria/Mariano/Workspaces/wITCLOUD/build-Calendario2-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/ui_calendario.h"
+    "file": "C:/Users/maria/Mariano/Workspaces/wITCLOUD/build-Calendario2-Desktop_Qt_6_2_4_MinGW_64_bit-Debug/ui_dialogoagregarevento.h"
 }
 ]
