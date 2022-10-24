@@ -11,7 +11,6 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPlainTextEdit>
@@ -27,9 +26,9 @@ public:
     QWidget *centralwidget;
     QPlainTextEdit *plainTextEdit;
     QPushButton *pushButton;
-    QLabel *label;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
+    QWidget *widget;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -46,18 +45,17 @@ public:
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(380, 250, 80, 24));
-        label = new QLabel(centralwidget);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(470, 10, 361, 531));
-        label->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
-"border-color: rgb(0, 0, 0);"));
-        label->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
         pushButton_2->setGeometry(QRect(490, 550, 80, 24));
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
         pushButton_3->setGeometry(QRect(590, 550, 80, 24));
+        widget = new QWidget(centralwidget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(470, 10, 361, 531));
+        widget->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"border-color: rgb(0, 0, 0);"));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -76,7 +74,6 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", ">>", nullptr));
-        label->setText(QString());
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "Clear", nullptr));
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "Guardar", nullptr));
     } // retranslateUi
