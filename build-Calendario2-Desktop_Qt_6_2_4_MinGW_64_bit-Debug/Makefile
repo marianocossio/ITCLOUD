@@ -210,6 +210,7 @@ Makefile: ../Calendario2/Calendario2.pro C:/Qt/6.2.4/mingw_64/mkspecs/win32-g++/
 		C:/Qt/6.2.4/mingw_64/mkspecs/features/yacc.prf \
 		C:/Qt/6.2.4/mingw_64/mkspecs/features/lex.prf \
 		../Calendario2/Calendario2.pro \
+		C:/Qt/6.2.4/mingw_64/lib/Qt6PrintSupport.prl \
 		C:/Qt/6.2.4/mingw_64/lib/Qt6Widgets.prl \
 		C:/Qt/6.2.4/mingw_64/lib/Qt6Gui.prl \
 		C:/Qt/6.2.4/mingw_64/lib/Qt6Core.prl \
@@ -356,6 +357,7 @@ C:/Qt/6.2.4/mingw_64/mkspecs/features/exceptions.prf:
 C:/Qt/6.2.4/mingw_64/mkspecs/features/yacc.prf:
 C:/Qt/6.2.4/mingw_64/mkspecs/features/lex.prf:
 ../Calendario2/Calendario2.pro:
+C:/Qt/6.2.4/mingw_64/lib/Qt6PrintSupport.prl:
 C:/Qt/6.2.4/mingw_64/lib/Qt6Widgets.prl:
 C:/Qt/6.2.4/mingw_64/lib/Qt6Gui.prl:
 C:/Qt/6.2.4/mingw_64/lib/Qt6Core.prl:

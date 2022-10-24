@@ -9,6 +9,11 @@
 #include <QFrame>
 #include <QLabel>
 #include <QFile>
+#include <QFileDialog>
+#include <QtPrintSupport/QPrinter>
+#include <QTextDocument>
+#include <QToolTip>
+#include <QTimer>
 
 #include "diacalendario.h"
 #include "dialogoagregarevento.h"
@@ -41,5 +46,6 @@ private slots:
     void diaSeleccionado(int fechaDiaSeleccionado);
     void actualizarLabelEventos(const QVector<QString> &evs, int fecha);
     void agregarEventoADia();
+    void exportarPDF();
 };
 #endif // MAINWINDOW_H

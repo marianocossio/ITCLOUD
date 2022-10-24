@@ -24,8 +24,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    const uint offsetsAndSize[16];
-    char stringdata0[100];
+    const uint offsetsAndSize[18];
+    char stringdata0[112];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_MainWindow_t, stringdata0) + ofs), len 
@@ -38,12 +38,13 @@ QT_MOC_LITERAL(28, 20), // "fechaDiaSeleccionado"
 QT_MOC_LITERAL(49, 22), // "actualizarLabelEventos"
 QT_MOC_LITERAL(72, 3), // "evs"
 QT_MOC_LITERAL(76, 5), // "fecha"
-QT_MOC_LITERAL(82, 17) // "agregarEventoADia"
+QT_MOC_LITERAL(82, 17), // "agregarEventoADia"
+QT_MOC_LITERAL(100, 11) // "exportarPDF"
 
     },
     "MainWindow\0diaSeleccionado\0\0"
     "fechaDiaSeleccionado\0actualizarLabelEventos\0"
-    "evs\0fecha\0agregarEventoADia"
+    "evs\0fecha\0agregarEventoADia\0exportarPDF"
 };
 #undef QT_MOC_LITERAL
 
@@ -53,7 +54,7 @@ static const uint qt_meta_data_MainWindow[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -61,13 +62,15 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   32,    2, 0x08,    1 /* Private */,
-       4,    2,   35,    2, 0x08,    3 /* Private */,
-       7,    0,   40,    2, 0x08,    6 /* Private */,
+       1,    1,   38,    2, 0x08,    1 /* Private */,
+       4,    2,   41,    2, 0x08,    3 /* Private */,
+       7,    0,   46,    2, 0x08,    6 /* Private */,
+       8,    0,   47,    2, 0x08,    7 /* Private */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Int,    3,
     QMetaType::Void, QMetaType::QStringList, QMetaType::Int,    5,    6,
+    QMetaType::Void,
     QMetaType::Void,
 
        0        // eod
@@ -82,6 +85,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->diaSeleccionado((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 1: _t->actualizarLabelEventos((*reinterpret_cast< std::add_pointer_t<QList<QString>>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
         case 2: _t->agregarEventoADia(); break;
+        case 3: _t->exportarPDF(); break;
         default: ;
         }
     }
@@ -95,7 +99,7 @@ const QMetaObject MainWindow::staticMetaObject = { {
     nullptr,
 qt_incomplete_metaTypeArray<qt_meta_stringdata_MainWindow_t
 , QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>
-, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<const QVector<QString> &, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
+, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<const QVector<QString> &, std::false_type>, QtPrivate::TypeAndForceComplete<int, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>, QtPrivate::TypeAndForceComplete<void, std::false_type>
 
 
 >,
@@ -122,13 +126,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }

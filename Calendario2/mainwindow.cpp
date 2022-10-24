@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     connect(&dialogo, SIGNAL( accepted() ), this, SLOT( agregarEventoADia() ));
+    connect(ui->action_Exportar, SIGNAL( triggered() ), this, SLOT( exportarPDF() ));
 
     QDate inicioDeMes(
                 QDate::currentDate().year(),
@@ -132,5 +133,35 @@ void MainWindow::agregarEventoADia()
     }
 
     manejadorArchivos.close();
+}
+
+void MainWindow::exportarPDF()
+{
+    QTextDocument documento;
+    QString html = "";
+
+    QPrinter impresora(QPrinter::HighResolution);
+    impresora.setOutputFormat(QPrinter::PdfFormat);
+    impresora.setOutputFileName( QFileDialog::getSaveFileName(this, "Exportar a PDF", "C:\\Users\\maria\\Desktop", "*.pdf") );
+    impresora.setPageMargins(QMargins(20, 30, 20, 15));
+
+    for (int dia = 0; dia < fechas.size(); dia++) {
+        html += "<p><b>" + QByteArray::number( fechas[dia]->getFecha() ) + "</b></p>";
+
+        if (fechas[dia]->cantEventosDia() > 0) {
+            for (int evento = 0; evento < fechas[dia]->cantEventosDia(); evento++) {
+                html += "<p>" + fechas[dia]->getEvento(evento) + "</p>";
+            }
+        }
+        else {
+            html += "<p>Sin eventos.</p>";
+        }
+    }
+
+    documento.setHtml(html);
+
+    documento.print(&impresora);
+
+    ui->statusbar->showMessage("Archivo exportado.", 3000);
 }
 
