@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QFileDialog>
 #include <QLabel>
+#include <QKeyEvent>
+#include <QMouseEvent>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -24,9 +26,15 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_pushButton_4_clicked();
+
+protected:
+    void mouseReleaseEvent(QMouseEvent *event);
+
 private:
     Ui::MainWindow *ui;
 
     QVector <QLabel*> renglones;
+    QVector <int> seleccionados;
 };
 #endif // MAINWINDOW_H
