@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Celda.qml</file>
+        <file>img/hombrecito.png</file>
+    </qresource>
+</RCC>

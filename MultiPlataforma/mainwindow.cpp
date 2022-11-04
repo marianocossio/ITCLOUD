@@ -7,11 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    SystemInfo::instancia().init();
-
-    connect(&timer, SIGNAL(timeout()), this, SLOT(actualizarLabel()));
-
-    timer.start(500);
+    connect(&hilo, SIGNAL(actualizarCPU(double)), this, SLOT(actualizarLabel(double)));
 }
 
 MainWindow::~MainWindow()
@@ -19,8 +15,15 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::actualizarLabel()
+void MainWindow::actualizarLabel(double nuevoDato)
 {
-    ui->datosSistema->setText(QString::number(SystemInfo::instancia().cpuLoad()));
+    ui->datosSistema->setText(QString::number(nuevoDato));
+    ui->graficoWidget->nuevoDato(nuevoDato);
+}
+
+
+void MainWindow::on_dial_valueChanged(int value)
+{
+    ui->graficoWidget->actualizarZoom(value);
 }
 

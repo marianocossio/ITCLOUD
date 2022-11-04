@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Raqueta.qml</file>
+        <file>hombrecito.png</file>
+        <file>ContadorPuntos.qml</file>
+        <file>ds_digital/DIGITAL.TXT</file>
+        <file>ds_digital/DS-DIGI.TTF</file>
+        <file>ds_digital/DS-DIGIB.TTF</file>
+        <file>ds_digital/DS-DIGII.TTF</file>
+        <file>ds_digital/DS-DIGIT.TTF</file>
+    </qresource>
+</RCC>
