@@ -1,71 +1,67 @@
 import QtQuick
 import QtQuick.Window
-
-import "https://gist.githubusercontent.com/marianocossio/3566cc0346678383335594dd2e0fccc2/raw/506b08a94d9b0e0f449527b6b3cf79963bc67ecb" as BotonExterno
+import QtQuick.Controls
 
 Window {
+    id: ventana
     width: 640
     height: 480
     visible: true
     title: "Agenda SQL"
 
-    Rectangle {
-        id: agenda
+    color: "#9994AB"
 
-        anchors.fill: parent
+    CampoInput {
+        id: nombre
+
+        width: parent.width
+
+        label: "Nombre"
+
+        color: Qt.lighter(ventana.color)
+    }
+
+    Boton {
+        id: botonBuscar
+        texto: "BUSCAR"
+
+        anchors.right: parent.right
+        anchors.top: nombre.bottom
         anchors.margins: 5
-        border.color: "black"
-        radius: 5
 
-        color: "#9994AB"
+        color: "#94ABA4"
 
+        onClicked:{
+            console.log("Accediendo a la base de datos.");
 
-        Text {
-            id: nombreLabel
-
-            text: "Nombre"
-
-            height: 20
-
-            anchors.top: parent.top
-            anchors.left: parent.left
-            verticalAlignment: TextInput.AlignVCenter
-
-            anchors.margins: 5
+            dialogoCalendario.open();
         }
+    }
 
-        Rectangle {
+    Dialog {
+        id: dialogoCalendario
 
-            width: agenda.width
-            height: 30
+        width: 300
+        height: 300
 
-            anchors.top: nombreLabel.bottom
-            anchors.left: parent.left
-            anchors.right: parent.right
-            anchors.margins: 5
-            border.color: "black"
+        anchors.centerIn: parent
+
+        background: Rectangle {
+            color: "#94ABA4"
+
             radius: 5
-
-            TextInput {
-                id: nombre
-
-                anchors.fill: parent
-                verticalAlignment: TextInput.AlignVCenter
-
-                anchors.leftMargin: 5
-            }
         }
 
-        BotonExterno.Boton {
-            id: botonBuscar
-            texto: "BUSCAR"
+        Calendario {
+            id: calendario
 
-            anchors.right: parent.right
-            anchors.top: nombre.bottom
-            anchors.margins: 5
+            color: "#94ABA4"
 
-            onClicked:{
-                console.log("Accediendo a la base de datos.");
+            anchors.fill: parent
+
+            onFechaSeleccionada: (dia, mes, anio) => {
+                                     print(dia + "/" + mes + "/" + anio);
+                                     dialogoCalendario.close();
             }
         }
     }
