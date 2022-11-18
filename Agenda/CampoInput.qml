@@ -7,7 +7,11 @@ Item {
     property alias label: rectanguloCampoLabel.text
     property alias input: rectanguloCampoInput.text
 
+    property bool clickeable: true
+
     height: rectanguloCampo.height
+
+    signal campoSeleccionado()
 
     Rectangle {
         id: rectanguloCampo
@@ -54,6 +58,22 @@ Item {
                 verticalAlignment: TextInput.AlignVCenter
 
                 anchors.leftMargin: 5
+
+                MouseArea {
+                    id: mouseAreaTextInput
+
+                    anchors.fill: parent
+
+                    hoverEnabled: true
+
+                    cursorShape: Qt.IBeamCursor
+
+                    onClicked: {
+                        rectanguloCampoInput.focus = campo.clickeable;
+
+                        campo.campoSeleccionado();
+                    }
+                }
             }
         }
     }
