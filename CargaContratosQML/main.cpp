@@ -1,6 +1,8 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
+#include "templatehandlerinterface.h"
+
 
 int main(int argc, char *argv[])
 {
@@ -16,6 +18,9 @@ int main(int argc, char *argv[])
         if (!obj && url == objUrl)
             QCoreApplication::exit(-1);
     }, Qt::QueuedConnection);
+
+    qmlRegisterType<TemplateHandlerInterface>("templatehandler.interface", 1, 0, "TemplateHandler");
+
     engine.load(url);
 
     return app.exec();
