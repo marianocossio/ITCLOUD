@@ -12,12 +12,13 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Quick)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick SerialPort)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick SerialPort Multimedia)
 
 set(PROJECT_SOURCES
         main.cpp
         qml.qrc
         ecgreceiver.h ecgreceiver.cpp
+        ecgreceiverinterface.h ecgreceiverinterface.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -44,7 +45,8 @@ else()
 endif()
 
 target_link_libraries(ECGReceiver
-  PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick Qt${QT_VERSION_MAJOR}::SerialPort)
+  PRIVATE Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Quick Qt${QT_VERSION_MAJOR}::SerialPort
+  Qt${QT_VERSION_MAJOR}::Multimedia)
 
 set_target_properties(ECGReceiver PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com

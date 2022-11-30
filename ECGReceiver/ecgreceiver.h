@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QtSerialPort/QSerialPort>
+#include <QVariant>
 
 #define BUFFER_SIZE 100
 
@@ -17,14 +18,15 @@ signals:
     void started();
     void stopped();
     void portError();
-    void dataReceived(float *data);
+    void dataReceived(const QVariantList &data);
 
 protected:
     QSerialPort port;
-    float *buffer;
+    QVariantList buffer;
 
 protected slots:
     void readData();
+    void informError(QSerialPort::SerialPortError error);
 
 public slots:
     void start(const QString &portName, QSerialPort::BaudRate baudRate);

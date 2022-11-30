@@ -1,7 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
-#include "ecgreceiver.h"
+#include "ecgreceiverinterface.h"
 
 int main(int argc, char *argv[])
 {
@@ -17,10 +17,10 @@ int main(int argc, char *argv[])
         if (!obj && url == objUrl)
             QCoreApplication::exit(-1);
     }, Qt::QueuedConnection);
-    engine.load(url);
 
-    ECGReceiver receiver;
-    receiver.start("COM2", QSerialPort::Baud115200);
+    qmlRegisterType<ECGReceiverInterface>("ECGReceiver.Interface", 1, 0, "SerialReceiver");
+
+    engine.load(url);
 
     return app.exec();
 }
