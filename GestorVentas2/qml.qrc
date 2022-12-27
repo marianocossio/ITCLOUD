@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Boton.qml</file>
+        <file>Calendario.qml</file>
+        <file>CampoInput.qml</file>
+        <file>defaultProfile.jpg</file>
+    </qresource>
+</RCC>
